@@ -187,6 +187,8 @@ import Input from "../../../component/input";
 import Checkbox from "../../../component/checkbox";
 // import MultipleCheckbox from "../../../component/checkbox";
 import Radio from "../../../component/radio";
+import Upload from "../../../component/fileUpload";
+
 
 const wait = (t: number) => new Promise((resolve) => setTimeout(resolve, t));
 
@@ -330,6 +332,9 @@ const Register = (props: Props) => {
   control={control}
   rules={{ required: 'Please select at least one option' }}
 />
+
+  <Upload/>
+
       <div>
         <button
           type="submit"
